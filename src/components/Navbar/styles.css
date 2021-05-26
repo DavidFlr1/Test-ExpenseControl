@@ -1,0 +1,26 @@
+.navbar-container {
+    width: 100%; 
+    background: #4a65a3; 
+    border-radius: 0 0 12px 12px;
+
+}
+
+.navbar-item {
+    width: 8rem;
+    text-align: center;
+    font-size: larger;
+}
+
+.navbar-subitem {
+    width: 7rem;
+    text-align: center;
+    font-weight: normal;
+    font-size: small;
+}
+
+.navbar-display {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 3rem;
+}

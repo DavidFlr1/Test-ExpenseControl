@@ -1,0 +1,19 @@
+.add-container {
+    background: #fff;
+    border: none;
+    margin: 1rem;
+    padding: 0.5rem;
+    border-radius: 15px;
+    box-shadow: 0px 0px 6px lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.add-button {
+    position: absolute;
+    bottom: 10%;
+    width: 48%;
+    margin: 1%;
+    z-index: 1;
+}

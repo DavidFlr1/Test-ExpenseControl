@@ -1,0 +1,54 @@
+.transactions-container {
+    height: 4rem;
+    background: #fff;
+    border: none;
+    margin: 1rem;
+    padding: 0.5rem;
+    border-radius: 15px;
+    box-shadow: 0px 0px 6px lightgray;
+    display: flex;
+}
+
+.transactions-type {
+    width: 50px;
+    height: 100%;
+    padding: 1rem;
+    background: #5ed164;
+    border-radius: 15px;
+}
+
+.transactions-concept {
+    width: 60%;
+    padding: 0.7rem 0.5rem;
+}
+
+.transactions-amount {
+    width: 20%;
+    padding: 0.7rem 0.5rem;
+}
+
+.transactions-arrow {
+    width: 10px;
+    padding: 0.7rem 0.5rem;
+    cursor: pointer;
+    float: right;
+}
+
+.transactions-details {
+    margin: 1rem !important;
+    padding: 0.5rem !important;
+    border-radius: 15px !important;
+    box-shadow: 0px 0px 6px lightgray;
+}
+
+.transactions-subDetails {
+    width: 100%;
+    text-align: center;
+    display: flex;
+}
+
+.transactions-balances {
+    width: 50%;
+    text-align: center;
+    display: block;
+}
