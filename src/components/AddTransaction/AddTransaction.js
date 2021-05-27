@@ -16,7 +16,7 @@ const AddTransaction = () => {
       ];
     return (
         <div >
-            <Button className="add-button" styles={{position: "sticky"}} onClick={() => setSmShow(true)} variant="primary" size="lg" block>Agregar Movimiento</Button>{' '}
+            <Button className="add-button background-neutral" styles={{position: "sticky"}} onClick={() => setSmShow(true)} variant="primary" size="lg" block>Agregar Movimiento</Button>{' '}
             <Modal centered size="sm" show={smShow} onHide={() => setSmShow(false)} aria-labelledby="example-modal-sizes-title-sm">
                 <Modal.Header>
                     <Modal.Title id="example-modal-sizes-title-sm">Nueva transaccion</Modal.Title>
@@ -42,7 +42,7 @@ const AddTransaction = () => {
                         <Form.Check type="checkbox" label="Ingreso" />
                     </Form.Group>
                     <br/>
-                    <Button variant="primary" type="submit">Submit</Button>
+                    <Button className="add-button background-neutral" variant="primary" type="submit">Submit</Button>
                 </Form>
 
                 </Modal.Body>

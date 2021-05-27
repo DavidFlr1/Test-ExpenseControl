@@ -9,12 +9,18 @@
     display: flex;
 }
 
-.transactions-type {
+.transactions-positive {
     width: 50px;
     height: 100%;
     padding: 1rem;
-    background: #5ed164;
     border-radius: 15px;
+}
+
+.transactions-negative {
+    width: 50px;
+    height: 100%;
+    padding: 1rem;
+    border-radius: 50%;
 }
 
 .transactions-concept {

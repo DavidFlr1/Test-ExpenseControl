@@ -25,13 +25,14 @@ input[type=number] {
 
 .main-container {
   background: #f4f9ff;
+  color: rgb(78, 78, 78);
+  box-shadow: 0px 0px 10px lightgray;
   min-height: 90vh;
   max-height: 90vh;
   width: 50%;
-  border: 1px solid gray;
+  border-radius: 15px;
   margin: 2rem 25%;
   display: block;
-  color: rgb(78, 78, 78);
   font-weight: bold;
   scroll-behavior: auto;
   overflow-y: auto;
@@ -53,13 +54,14 @@ input[type=number] {
 }
 
 .background-neutral {
-  color: #4a65a3;
+  background: #4a65a3 !important;
+  border-color: #4a65a3 !important;
 }
 
 .background-positive {
-  color: #5ed164;
+  background: #5ed164;
 }
 
 .background-negative {
-  color: #e46466;
+  background: #e46466;
 }

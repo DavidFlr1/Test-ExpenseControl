@@ -6,20 +6,22 @@ import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons'
 
 import './styles.css'
 
-const Transactions = () => {
-    const [showDetails, setShowDetails] = useState(false)
+const Transactions = ({transaction, month}) => {
+    const [showDetails, setShowDetails] = useState(false)    
 
-    
+    useEffect(() => {
+        setShowDetails(false)
+    },[month])
     return (
         <div>
             <div className="transactions-container">
 
-                <div className="transactions-type"></div>
+                <div className={transaction.type ? "background-negative transactions-negative" : "background-positive transactions-positive"}></div>
                 <div className="transactions-concept">
-                    <h5>Nueva transaccion</h5>
+                    <h5>{transaction.name}</h5>
                 </div>
                 <div className="transactions-amount">
-                    <p>$500</p>
+                    <p className={transaction.type ? "color-negative" : "color-positive"}>{transaction.type ? '-' : '+'}${transaction.amount}</p>
                 </div>
                 <div className="transactions-arrow">
                     {showDetails ? 
@@ -34,11 +36,11 @@ const Transactions = () => {
                     <hr />
                     <div className="transactions-subDetails">
                         <div className="transactions-balances" style={{borderRight: "1px solid lightgray"}}>
-                            <span className="color-neutral">Nueva transaccion</span>
-                            <p className="color-neutral">Fecha: 01/01/2000</p>
+                            <span className="color-neutral">{transaction.name}</span>
+                            <p className="color-neutral">{transaction.date}</p>
                         </div>
                         <div className="transactions-balances" style={{borderLeft: "1px solid lightgray"}}>
-                            <h3 className="color-positive">+$500</h3>
+                            <h3 className={transaction.type ? "color-negative" : "color-positive"}>${transaction.amount}</h3>
                         </div>
                     </div>
                 </Alert>
