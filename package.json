@@ -1,6 +1,7 @@
 {
   "name": "expense-control",
   "version": "0.1.0",
+  "homepage": "https://davidflr1.github.io/Test-ExpenseControl/",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
