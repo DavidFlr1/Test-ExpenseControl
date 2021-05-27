@@ -12,10 +12,10 @@ const Transactions = ({transaction, month}) => {
     useEffect(() => {
         setShowDetails(false)
     },[month])
+
     return (
         <div>
             <div className="transactions-container">
-
                 <div className={transaction.type ? "background-negative transactions-negative" : "background-positive transactions-positive"}></div>
                 <div className="transactions-concept">
                     <h5>{transaction.name}</h5>
